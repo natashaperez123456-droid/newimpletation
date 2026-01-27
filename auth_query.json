@@ -1,0 +1,3 @@
+{
+  "query": "mutation { tokenCreate(email: \"admin@example.com\", password: \"admin\") { token errors { field message } } }"
+}

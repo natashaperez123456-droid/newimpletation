@@ -1,0 +1,17 @@
+PASO 1: Habilitar servicios necesarios (Copia y pega)
+gcloud services enable artifactregistry.googleapis.com cloudbuild.googleapis.com
+
+PASO 2: Crear repositorio de imágenes (Copia y pega)
+gcloud artifacts repositories create saleor-repo --repository-format=docker --location=us-east1
+
+PASO 3: Importar la imagen de Saleor (Copia y pega estos 2 comandos uno por uno)
+echo "FROM ghcr.io/saleor/saleor:3.19" > Dockerfile
+
+gcloud builds submit --tag us-east1-docker.pkg.dev/tiny-bright-store-2026/saleor-repo/saleor-api:3.19 .
+
+--------------------------------------------------------------------------------
+
+PASO 4: DESPLEGAR (Ahora sí funcionará)
+Reemplaza TU_CONTRASEÑA y pega todo esto en una sola línea:
+
+gcloud run deploy saleor-api --image=us-east1-docker.pkg.dev/tiny-bright-store-2026/saleor-repo/saleor-api:3.19 --region=us-east1 --platform=managed --allow-unauthenticated --add-cloudsql-instances=tiny-bright-store-2026:us-east1:saleor-db-v2 --set-env-vars "DATABASE_URL=postgres://postgres:TU_CONTRASEÑA@/saleor?host=/cloudsql/tiny-bright-store-2026:us-east1:saleor-db-v2" --set-env-vars "REDIS_URL=redis://10.177.214.187:6379/1" --set-env-vars "SECRET_KEY=temporalsecretkey123" --set-env-vars "ALLOWED_HOSTS=*" --set-env-vars "ALLOWED_CLIENT_HOSTS=*" --memory=1Gi

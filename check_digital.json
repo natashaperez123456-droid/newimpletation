@@ -1,0 +1,3 @@
+{
+  "query": "{ productVariant(id: \"UHJvZHVjdFZhcmlhbnQ6NDEy\", channel: \"default-channel\") { id name digitalContent { id contentFile } } }"
+}

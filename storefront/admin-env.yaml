@@ -1,0 +1,2 @@
+DATABASE_URL: postgres://postgres:Jeremi@s2020@/saleor?host=/cloudsql/tiny-bright-store-2026:us-east1:saleor-db-v2
+SECRET_KEY: temporalsecretkey123

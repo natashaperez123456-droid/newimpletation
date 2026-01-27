@@ -1,0 +1,7 @@
+{
+  "query": "mutation CreateDigitalContent($variantId: ID!, $file: Upload!) { digitalContentCreate(variantId: $variantId, input: {useDefaultSettings: true, maxDownloads: 0, urlValidDays: 0, automaticSettleToken: true}) { content { id } } digitalContentUpload(variantId: $variantId, file: $file) { content { id } } }",
+  "variables": {
+    "variantId": "UHJvZHVjdFZhcmlhbnQ6MzMz",
+    "file": null
+  }
+}

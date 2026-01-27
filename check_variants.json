@@ -1,0 +1,3 @@
+{
+  "query": "{ products(first: 10, channel: \"default-channel\") { edges { node { name slug variants { id name quantityAvailable pricing { price { gross { amount } } } } } } } }"
+}
