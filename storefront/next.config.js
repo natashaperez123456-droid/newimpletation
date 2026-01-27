@@ -19,9 +19,9 @@ const config = {
 	typescript: {
 		ignoreBuildErrors: true,
 	},
-	eslint: {
-		ignoreDuringBuilds: true,
-	},
+	// eslint: {
+	// 	ignoreDuringBuilds: true,
+	// },
 	// ... el resto de tu configuración
 	async headers() {
 		return [
