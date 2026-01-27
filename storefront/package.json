@@ -12,7 +12,7 @@
 		"prebuild": "echo 'Skipping generation'",
 		"lint": "eslint",
 		"generate": "graphql-codegen --config .graphqlrc.ts",
-		"prepare": "husky install"
+		"prepare": "echo 'Skipping husky install'"
 	},
 	"dependencies": {
 		"@adyen/adyen-web": "5.53.3",
