@@ -55,7 +55,7 @@ export const DownloadSection = ({ variantId, productSlug, disabled }: DownloadSe
 			<div className="flex items-center gap-2 text-xs text-neutral-600">
 				<div className="flex h-4 w-4 items-center justify-center rounded bg-indigo-100 text-[10px]">📧</div>
 				<span>
-					Using: <span className="text-neutral-800">jeremias@gmail.com</span>
+					{/* Using: <span className="text-neutral-800">jeremias@gmail.com</span> */}
 				</span>
 				<button className="text-[#d41c6d] underline hover:text-[#b0165a]">change</button>
 			</div>
