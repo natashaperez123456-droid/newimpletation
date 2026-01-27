@@ -63,7 +63,7 @@ export default async function Page(props: {
 		notFound();
 	}
 
-	const description = product?.description ? parser.parse(JSON.parse(product?.description)) : null;
+	const description = product?.description ? parser.parse(product.description) : null;
 
 	const variants = product.variants;
 	const selectedVariantID = searchParams.variant || variants?.[0]?.id;

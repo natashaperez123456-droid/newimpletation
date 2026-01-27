@@ -4,7 +4,7 @@ export interface Product {
 	id: string;
 	name: string;
 	slug: string;
-	description: string | null;
+	description: object | string | null;
 	seoTitle: string | null;
 	seoDescription: string | null;
 	pricing: {
