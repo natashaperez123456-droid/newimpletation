@@ -10,6 +10,8 @@ import { formatMoney } from "@/lib/utils";
 import { getLocalProductBySlug, getLocalProducts } from "@/lib/products";
 import { getProductCoverUrl } from "@/lib/productCoverMap";
 
+export const dynamic = "force-dynamic";
+
 export async function generateMetadata(
 	props: {
 		params: Promise<{ slug: string; channel: string }>;
