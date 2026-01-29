@@ -34,6 +34,16 @@ export default function RootLayout(props: { children: ReactNode }) {
 	return (
 		<html lang="en" className={`${display.variable} ${sans.variable} min-h-dvh`}>
 			<body>
+				<Script async src="https://www.googletagmanager.com/gtag/js?id=G-G96QGR5HVH" />
+				<Script id="google-analytics">
+					{`
+						window.dataLayer = window.dataLayer || [];
+						function gtag(){dataLayer.push(arguments);}
+						gtag('js', new Date());
+
+						gtag('config', 'G-G96QGR5HVH');
+					`}
+				</Script>
 				<Script
 					src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback"
 					async
