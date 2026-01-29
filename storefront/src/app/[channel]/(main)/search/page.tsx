@@ -11,7 +11,7 @@ export default async function SearchPage({ searchParams }: { searchParams: Promi
 	return (
 		<div className="mx-auto max-w-7xl px-8 pb-16">
 			<h1 className="font-display my-10 text-4xl font-bold text-[color:var(--ink)]">
-				Search results for &quot;{query}&quot;
+				Search results for "{query}"
 			</h1>
 			{products.length > 0 ? (
 				<ProductList products={products as any} />

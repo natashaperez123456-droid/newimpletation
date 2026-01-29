@@ -18,8 +18,8 @@ const sans = Manrope({
 });
 
 export const metadata: Metadata = {
-	title: "Saleor Storefront example",
-	description: "Starter pack for building performant e-commerce experiences with Saleor.",
+	title: "Tiny and Bright Color",
+	description: "Free printable coloring pages for kids and adults. Download high-quality PDFs and PNGs for home printing.",
 	metadataBase: process.env.NEXT_PUBLIC_STOREFRONT_URL
 		? new URL(process.env.NEXT_PUBLIC_STOREFRONT_URL)
 		: undefined,
@@ -34,7 +34,7 @@ export default function RootLayout(props: { children: ReactNode }) {
 	return (
 		<html lang="en" className={`${display.variable} ${sans.variable} min-h-dvh`}>
 			<body>
-				<Script async src="https://www.googletagmanager.com/gtag/js?id=G-G96QGR5HVH" />
+				<Script async src="https://www.googagmanager.com/gtag/js?id=G-G96QGR5HVH" />
 				<Script id="google-analytics">
 					{`
 						window.dataLayer = window.dataLayer || [];

@@ -4,9 +4,8 @@ import { getProductCoverUrl } from "@/lib/productCoverMap";
 import { ProductList } from "@/ui/components/ProductList";
 
 export const metadata = {
-	title: "Tiny Tales & Bright Color - Free Coloring Pages",
-	description:
-		"Free printable coloring pages for kids and adults. Download high-quality PDFs and PNGs for home printing.",
+	title: "Tiny and Bright Color",
+	description: "Free printable coloring pages for kids and adults. Download high-quality PDFs and PNGs for home printing.",
 };
 
 export default async function Page(props: { params: Promise<{ channel: string }> }) {
