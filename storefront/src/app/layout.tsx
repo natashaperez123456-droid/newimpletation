@@ -34,7 +34,7 @@ export default function RootLayout(props: { children: ReactNode }) {
 	return (
 		<html lang="en" className={`${display.variable} ${sans.variable} min-h-dvh`}>
 			<body>
-				<Script async src="https://www.googagmanager.com/gtag/js?id=G-G96QGR5HVH" />
+				<Script async src="https://www.googletagmanager.com/gtag/js?id=G-G96QGR5HVH" />
 				<Script id="google-analytics">
 					{`
 						window.dataLayer = window.dataLayer || [];
