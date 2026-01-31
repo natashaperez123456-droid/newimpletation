@@ -9,6 +9,11 @@ const PRODUCT_FILE_BASE_NAMES: Record<string, string> = {
 	"dog-and-cats-coloring-pages": "dog-and-cats-coloring-pages-book",
 	"floral-potraits": "floral-potraits-coloring-book",
 	"kawaii-coloring": "kawaii-home-coloring-book",
+	// Nuevos productos
+	"adult-comic-coloring-pages": "adult-comic-coloring-pages",
+	"baby-ponies": "baby-ponies",
+	"happy-animal-colouring-pages": "happy-animal-colouring-book",
+	"space": "space",
 };
 
 export function getProductFileKey(slug: string, format: "PDF" | "PNG"): string | null {

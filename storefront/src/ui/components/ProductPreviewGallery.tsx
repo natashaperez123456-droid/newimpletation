@@ -13,7 +13,7 @@ const Watermark = () => (
 );
 
 const buildPreviewImages = (slug: string, count: number) =>
-	Array.from({ length: count }, (_, index) => `/preview/${slug}/page-${index + 1}.jpg`);
+	Array.from({ length: count }, (_, index) => `/preview/${slug.toLowerCase()}/page-${index + 1}.jpg`);
 
 export function ProductPreviewGallery({ slug, count = 4 }: { slug: string; count?: number }) {
 	const images = useMemo(() => buildPreviewImages(slug, count), [slug, count]);

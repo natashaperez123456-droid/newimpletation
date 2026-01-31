@@ -9,6 +9,7 @@ import { ProductPreviewGallery } from "@/ui/components/ProductPreviewGallery";
 import { formatMoney } from "@/lib/utils";
 import { getLocalProductBySlug, getLocalProducts } from "@/lib/products";
 import { getProductCoverUrl } from "@/lib/productCoverMap";
+import { getPreviewCount } from "@/lib/productPreviewMap";
 
 export const dynamic = "force-dynamic";
 
@@ -104,7 +105,7 @@ export default async function Page(props: {
 							/>
 						</div>
 					</div>
-					<ProductPreviewGallery slug={product.slug} />
+					<ProductPreviewGallery slug={product.slug} count={getPreviewCount(product.slug)} />
 					<div className="flex flex-wrap justify-center gap-2 text-[10px] font-bold uppercase tracking-[0.22em] text-white lg:justify-start">
 						<span className="rounded-full border border-transparent bg-[#d93025] px-3 py-1">PDF</span>
 						<span className="rounded-full border border-transparent bg-[#f59e0b] px-3 py-1">

@@ -7,6 +7,11 @@ export const PRODUCT_COVER_MAP: Record<number, string> = {
 	156: "dogs_cat_pages_coloring.png",
 	157: "flowers_coloring_pages.png",
 	162: "kawai_home_coloring.png",
+	// Nuevos productos
+	165: "adult-comic-coloring-pages.png",
+	166: "baby-pony.png",
+	167: "happy-animal-colouring-book-free-colouring-pages-4.png",
+	168: "space.png",
 };
 
 // Función helper para decodificar Product ID de GraphQL

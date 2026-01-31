@@ -6,10 +6,11 @@ import { type Metadata } from "next";
 export async function generateMetadata({
 	params,
 }: {
-	params: { slug: string };
+	params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
+	const resolvedParams = await params;
 	const categoryName =
-		typeof params?.slug === "string" ? params.slug.charAt(0).toUpperCase() + params.slug.slice(1) : "";
+		typeof resolvedParams?.slug === "string" ? resolvedParams.slug.charAt(0).toUpperCase() + resolvedParams.slug.slice(1) : "";
 
 	return {
 		title: `Coloring Pages for ${categoryName}`,
